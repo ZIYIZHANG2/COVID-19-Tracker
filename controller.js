@@ -28,7 +28,7 @@ d3.csv("https://raw.githubusercontent.com/ZIYIZHANG2/COVID-19-Tracker/main/all-s
     for (let i = 0; i <= n; i++) {
         const z = filter_and_unpack(rows, 'death', date_list[i]);
         const locations = filter_and_unpack(rows, 'state', date_list[i]);
-        frames[i] = {data: [{z: z, locations: locations, text: locations}], name: date_list[i]};
+        frames[i] = {data: [{z: z, locations: locations, text: locations.map(location => short2full[location])}], name: date_list[i]};
         slider_steps.push ({
             label: date_list[i],
             method: "animate",
@@ -47,8 +47,7 @@ d3.csv("https://raw.githubusercontent.com/ZIYIZHANG2/COVID-19-Tracker/main/all-s
         locationmode: 'USA-states',
         locations: frames[0].data[0].locations,
         z: frames[0].data[0].z,
-        // text: frames[0].data[0].locations,
-        text: null,
+        text: frames[0].data[0].locations,
         zauto: false,
         zmin: 0,
         zmax: 5000
