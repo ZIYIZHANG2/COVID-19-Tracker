@@ -223,7 +223,7 @@ d3.csv('https://raw.githubusercontent.com/ZIYIZHANG2/COVID-19-Tracker/main/all-s
         const layout = {
             title: {text: 'US State Covid Deaths Trend<br>2020.03 - 2021.03', xref: 'paper', x: 0.5},
             height: 800,
-            width: 1600,
+            // width: 1600,
             margin: {l: 150},
             paper_bgcolor: '#2F4F4F',
             plot_bgcolor: '#2F4F4F',
