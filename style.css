@@ -9,7 +9,7 @@ body{
     text-align: center;
     padding: 2em 0;
     background: linear-gradient(to bottom, rgba(0,36,2,0.75) 0%, darkred 100%),
-    url("https://github.com/ZIYIZHANG2/COVID-19-Tracker/blob/main/virus.jpeg");
+    url("https://github.com/ZIYIZHANG2/COVID-19-Tracker/blob/main/virus.jpeg?raw=true");
     background-size: cover;
 }
 
