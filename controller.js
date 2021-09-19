@@ -1,5 +1,5 @@
 
-d3.csv("https://raw.githubusercontent.com/ZIYIZHANG2/AA/dev/all-states-history-1.csv", function(err, rows){
+d3.csv("https://raw.githubusercontent.com/ZIYIZHANG2/COVID-19-Tracker/main/all-states-history.csv", function(err, rows){
 
     function dateChange(num = 1, date = false) {
         if (!date) {
@@ -158,7 +158,7 @@ for (let k in short2full) {
     full2short[value] = k;
 }
 
-d3.csv('https://raw.githubusercontent.com/ZIYIZHANG2/AA/dev/all-states-history-1.csv', function(err, rows){
+d3.csv('https://raw.githubusercontent.com/ZIYIZHANG2/COVID-19-Tracker/main/all-states-history.csv', function(err, rows){
 
     function filter_and_unpack(rows, key, state) {
         return rows.filter(row => row['state'] === state).map(row => row[key]);
